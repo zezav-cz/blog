@@ -19,3 +19,12 @@ parts:
     - file: pages/sec/postrani_kanal/casovy_postranni_kanal
     - file: pages/sec/postrani_kanal/odberovy_postranni_kanal
     - file: pages/sec/postrani_kanal/utok_postranim_kanalem
+- caption: Kubernetes
+  chapters:
+  - file: pages/kubernetes/kubernetes
+- caption: Kontejnery
+  chapters:
+  - file: pages/kontejnery/kontejner
+- caption: ____________
+  chapters:
+  - file: about
