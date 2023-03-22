@@ -11,31 +11,17 @@ permissions:
 jobs: 
   # This job deploys the example book
   deploy-blog:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        python-version: [3.8]
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
       with:  
         lfs: true
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v1
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-        pip install -r blog/requirements.txt
     - name: Build book
       run: |
-        jupyter-book build blog/
-
+        build
     - name: GitHub Pages upload
       uses: actions/upload-pages-artifact@v1
       with:
         path: blog/_build/html
-    
     - name: GitHub Pages deploy    
       uses: actions/deploy-pages@v1
