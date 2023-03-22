@@ -1,4 +1,4 @@
-name: deploy
+name: Deploy To GH pages
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
       with:  
         lfs: true
-    - name: Build book
+    - name: Build blog
       run: |
         make
     - name: GitHub Pages upload
