@@ -1,0 +1,27 @@
+name: Deploy To GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs: 
+  # This job deploys the example book
+  deploy-blog:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:  
+        lfs: true
+    - name: Build blog
+      run: |
+        make
+    - name: GitHub Pages upload
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: out/_build/html
+    - name: GitHub Pages deploy    
+      uses: actions/deploy-pages@v1
