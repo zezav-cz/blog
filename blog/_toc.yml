@@ -9,13 +9,45 @@ parts:
   - file: pages/sec/crypto/rsa
   - file: pages/sec/AES/AES
     sections:
-      - file: pages/sec/AES/AES-AddRoundKey
-      - file: pages/sec/AES/AES-MixColumns
-      - file: pages/sec/AES/AES-ShiftRows
-      - file: pages/sec/AES/AES-SubBytes
-      - file: pages/sec/AES/AES-TBox
+    - file: pages/sec/AES/AES-AddRoundKey
+    - file: pages/sec/AES/AES-MixColumns
+    - file: pages/sec/AES/AES-ShiftRows
+    - file: pages/sec/AES/AES-SubBytes
+    - file: pages/sec/AES/AES-TBox
   - file: pages/sec/postrani_kanal/postranni_kanal
     sections:
     - file: pages/sec/postrani_kanal/casovy_postranni_kanal
     - file: pages/sec/postrani_kanal/odberovy_postranni_kanal
     - file: pages/sec/postrani_kanal/utok_postranim_kanalem
+  - file: pages/sec/buffer_overflow
+    sections:
+    - file: pages/sec/buffer_overflow/school_example
+    - file: pages/sec/buffer_overflow/linux
+    - file: pages/sec/buffer_overflow/kanarci
+    - file: pages/sec/buffer_overflow/aslr
+    - file: pages/sec/buffer_overflow/dep
+    - file: pages/sec/buffer_overflow/heap_overflow
+  - file: pages/sec/secure_app
+  - file: pages/sec/pk_infrastructure
+  - file: pages/sec/differential_analysis
+  - file: pages/sec/tls
+- caption: Linux/Unix
+  chapters:
+  - file: pages/linux/storages
+    sections:
+    - file: pages/linux/storages/zfs
+    - file: pages/linux/storages/mbr
+    - file: pages/linux/storages/gpt
+    - file: pages/linux/storages/nfs
+    - file: pages/linux/storages/ext4
+  - file: pages/linux/kernel
+  - file: pages/linux/process_restrictions
+  - file: pages/linux/se_linux
+- caption: Containers
+  chapters:
+  - file: pages/containers/crd
+- caption: Programming
+  chapters:
+  - file: pages/programing/alg
+  - file: pages/programing/multi_threading
+
