@@ -1,0 +1,50 @@
+name: ZezavBlog
+tagline: My Articles and Notes
+url: ''
+footer: >
+  <div>
+    <small>Copyright © 2023 Jan Trojak</small>
+  </div>
+language: ''
+pagination: 10
+pages_title: Pages
+tags_title: Tags
+tags_content_title: Posts tagged with '$tag'
+archives_title: Archive
+archives_content_title: Posts from '$year'
+streams_title: Streams
+streams_content_title: ''
+authors_title: Authors
+enable_search: true
+enable_related_content: false
+search_title: ''
+content_path: content
+site_path: ''
+templates_path: templates
+static_path: static
+media_path: media
+card_image: ''
+banner_image: ''
+logo_image: ''
+default_date_format: "%A, %d %B %Y"
+menu:
+- ["Tags", "tags.html"]
+- ["Archive", "archive.html"]
+- ["Authors", "authors.html"]
+- ["Github", "https://github.com/rochacbruno/marmite"]
+default_author: zezav
+authors:
+  zezav:
+    name: Jan Trojak
+    avatar: https://github.com/zezav-cz.png
+    bio: |
+      My name is Jan Troják, I am a student of the Czech Technical University in Prague, Faculty of Information Technology. At the University I used to study inflrmational security during my batchelores degree. On magister programe I transitioned to Computer Systems and Networks. <br /> <br />
+      Among my studies I am linux and opensource enthusiast. At the moment i focuse mailny on infrastructure, DevOps and security of IT systems. I like the infrastructure part, because usualy its the glue that holds projects and products together - which brings value and projects to the live. <br /> <br />
+      Among IT I really like country side and all it brings like manual work on a garden, hiking, cycling and other outdoor activities. My biggest hobby are summer camps, which I love to help organize and run.
+    links:
+      - ["Github", "https://github.com/zezav-cz"]
+      - ["Web", "https://zezav.cz"]
+      - ["Telegam", "https://t.me/Zezavv"]
+      - ["LinkedIn", "https://www.linkedin.com/in/jan-prijmeni-66ba23169/"]
+toc: true
+json_feed: false
